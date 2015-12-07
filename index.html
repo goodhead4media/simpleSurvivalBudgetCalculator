@@ -19,56 +19,34 @@
 	    <label>Note: this application is local-only and the data you provide is anonymous anyway. None shall be collected.</label>
     </div>
     <div id="theForm" class="container">
-	  <table id="theTable">
-	   <tr>
-	       <td class="tableCell"><p class="formLabel">Rent: </p></td>
-		   <td class="tableCell"><input type="text" id="txtRent" name="txtRent" /></td>
-	       <td class="tableCell"><label id="noRent" class="error">{ ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-	       <td class="tableCell"><p class="formLabel">Food: </p></td>
-	       <td class="tableCell"><input type="text" id="txtFood" name="txtFood" /><td>
-	       <td class="tableCell"><label id="noFood" class="error"> {ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-		   <td class="tableCell"><p class="formLabel">Water: </p></td>
-		   <td class="tableCell"><input type="text" id="txtWater" name="txtWater" /></td>
-		   <td class="tableCell"><label id="noWater" class="error"> {ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-		   <td class="tableCell"><p class="formLabel">Gas: </p></td>
-		   <td class="tableCell"><input type="text" id="txtGas" name="txtGas" /></td>
-		   <td class="tableCell"><label id="noGas" class="error">{ ERROR: No value entered.E}</label></td>
-	   </tr>
-	   <tr>
-	       <td class="tableCell"><p class="formLabel">Electricity: </p></td>
-	       <td class="tableCell"><input type="text" id="txtElectricity" name="txtElectricity" /></td>
-	       <td class="tableCell"><label id="noElectricity" class="error">{ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-           <td class="tableCell"><p class="formLabel">TV, Phone & Internet: </p></td>
-		   <td class="tableCell"><input type="text" id="txtTel" name="txtTel" /></td>
-		   <td class="tableCell"><label id="noTV" class="error"> {ERROR: No value entered.}</label></td>
-	   </tr>
-       <tr>
-		   <td class="tableCell"><p class="formLabel">Mobile: </p></td>
-		   <td class="tableCell"><input type="text" id="txtMob" name="txtMob" /></td>
-		   <td class="tableCell"><label id="noMobiles" class="error"> {ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-           <td class="tableCell"><p class="formLabel">Insurance: </p></td>
-		   <td class="tableCell"><input type="text" id="txtInsurance" name="txtInsurance" /></td>
-		   <td class="tableCell"><label id="noInsurance" class="error">{ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-	       <td class="tableCell"><p class="formLabel">Savings: </p></td>
-		   <td class="tableCell"><input type="text" id="txtSavings" name="txtSavings" /></td>
-		   <td class="tableCell"><label id="noSavings" class="error"> {ERROR: No value entered.}</label></td>
-	   </tr>
-	   <tr>
-	       <td><input type="button" id="btnCalc" name="btnCalc" class="btn btn-primary" value="Calculate" /></td>
-	   </tr>
-	  </table>
+	        <p class="formLabel">Rent: </p>
+                <input type="text" id="txtRent" name="txtRent" />
+                <label id="noRent" class="error">{ ERROR: No value entered.}</label>
+	        <p class="formLabel">Food: </p></td>
+                <input type="text" id="txtFood" name="txtFood" />
+	        <label id="noFood" class="error"> {ERROR: No value entered.}</label>
+		<p class="formLabel">Water: </p>
+		<input type="text" id="txtWater" name="txtWater" />
+	        <label id="noWater" class="error"> {ERROR: No value entered.}</label>
+                <p class="formLabel">Gas: </p>
+		<input type="text" id="txtGas" name="txtGas" />
+		<label id="noGas" class="error">{ ERROR: No value entered.E}</label>
+                <p class="formLabel">Electricity: </p></td>
+	        <input type="text" id="txtElectricity" name="txtElectricity" />
+	        <label id="noElectricity" class="error">{ERROR: No value entered.}</label>
+                <p class="formLabel">TV, Phone & Internet: </p>
+		<input type="text" id="txtTel" name="txtTel" />
+	        <label id="noTV" class="error"> {ERROR: No value entered.}</label>
+                <p class="formLabel">Mobile: </p>
+		<input type="text" id="txtMob" name="txtMob" />
+		<label id="noMobiles" class="error"> {ERROR: No value entered.}</label>
+                <p class="formLabel">Insurance: </p>
+                <input type="text" id="txtInsurance" name="txtInsurance" />
+		<label id="noInsurance" class="error">{ERROR: No value entered.}</label>
+                <p class="formLabel">Savings: </p></td>
+		<input type="text" id="txtSavings" name="txtSavings" />
+		<label id="noSavings" class="error"> {ERROR: No value entered.}</label>
+	        <input type="button" id="btnCalc" name="btnCalc" class="btn btn-primary" value="Calculate" />
 	  <div id="resultsPanel" class="container">
 	    <h2>Results Panel</h2>
 	    <label id="lblAnnual">{Annual Budget}</label>
