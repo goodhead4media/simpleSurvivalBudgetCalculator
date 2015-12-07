@@ -1,0 +1,37 @@
+/* index.css */
+#container {
+    position: relative;
+    margin-top: 5%;
+}
+#btnCalc {
+	padding: 5%; 
+}
+#topBit {
+    text-align: center;
+	padding-top: 5%;
+}
+#theForm {
+    position: relative;
+    margin-top: 5%;	
+	width: 80%;
+}
+#theTable {
+    position: relative;
+	margin-left: 5%;
+}
+#resultsPanel {
+   background-color: #f8ea9f;
+   position: relative;
+   margin-top: 5%;
+   font-size: 1.5em;
+}
+footer {
+    padding: 1%;
+}
+.tableCell {
+	padding: 1%;
+}
+.error {
+    color: #e82727;
+    font-weight: bold;
+}
