@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Survival Budget Calculator</title>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" href="bootstrap.css" />
+   <link rel="stylesheet" href="index.css" />
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="survivalbudget.js"></script>
+ </head>
+ <body>
+  <div id="topBit" class="nav navbar-defualt">
+     <h1><a href="">Survival Budget Calculator</a></h1>
+  </div>
+  <div id="container" class="jumbotron">
+    <div id="aboutUs" class="container">
+        <h2>Survival Budget Calculator</h2>
+	    <h3>Enter average monthly finances.</h3>
+	    <label>Note: this application is local-only and the data you provide is anonymous anyway. None shall be collected.</label>
+    </div>
+    <div id="theForm" class="container">
+	  <table id="theTable">
+	   <tr>
+	       <td class="tableCell"><p class="formLabel">Rent: </p></td>
+		   <td class="tableCell"><input type="text" id="txtRent" name="txtRent" /></td>
+	       <td class="tableCell"><label id="noRent" class="error">{ ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+	       <td class="tableCell"><p class="formLabel">Food: </p></td>
+	       <td class="tableCell"><input type="text" id="txtFood" name="txtFood" /><td>
+	       <td class="tableCell"><label id="noFood" class="error"> {ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+		   <td class="tableCell"><p class="formLabel">Water: </p></td>
+		   <td class="tableCell"><input type="text" id="txtWater" name="txtWater" /></td>
+		   <td class="tableCell"><label id="noWater" class="error"> {ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+		   <td class="tableCell"><p class="formLabel">Gas: </p></td>
+		   <td class="tableCell"><input type="text" id="txtGas" name="txtGas" /></td>
+		   <td class="tableCell"><label id="noGas" class="error">{ ERROR: No value entered.E}</label></td>
+	   </tr>
+	   <tr>
+	       <td class="tableCell"><p class="formLabel">Electricity: </p></td>
+	       <td class="tableCell"><input type="text" id="txtElectricity" name="txtElectricity" /></td>
+	       <td class="tableCell"><label id="noElectricity" class="error">{ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+           <td class="tableCell"><p class="formLabel">TV, Phone & Internet: </p></td>
+		   <td class="tableCell"><input type="text" id="txtTel" name="txtTel" /></td>
+		   <td class="tableCell"><label id="noTV" class="error"> {ERROR: No value entered.}</label></td>
+	   </tr>
+       <tr>
+		   <td class="tableCell"><p class="formLabel">Mobile: </p></td>
+		   <td class="tableCell"><input type="text" id="txtMob" name="txtMob" /></td>
+		   <td class="tableCell"><label id="noMobiles" class="error"> {ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+           <td class="tableCell"><p class="formLabel">Insurance: </p></td>
+		   <td class="tableCell"><input type="text" id="txtInsurance" name="txtInsurance" /></td>
+		   <td class="tableCell"><label id="noInsurance" class="error">{ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+	       <td class="tableCell"><p class="formLabel">Savings: </p></td>
+		   <td class="tableCell"><input type="text" id="txtSavings" name="txtSavings" /></td>
+		   <td class="tableCell"><label id="noSavings" class="error"> {ERROR: No value entered.}</label></td>
+	   </tr>
+	   <tr>
+	       <td><input type="button" id="btnCalc" name="btnCalc" class="btn btn-primary" value="Calculate" /></td>
+	   </tr>
+	  </table>
+	  <div id="resultsPanel" class="container">
+	    <h2>Results Panel</h2>
+	    <label id="lblAnnual">{Annual Budget}</label>
+	    <br/>
+	    <label id="lblMonthly">{Total Monthly}</label>
+	  </div>
+	  
+	</div>
+  </div>
+  <footer class="footer footer-static">
+     <div class="container">
+	    <h3>This was a personal project and should not be taken seriously.</h3>
+	 </div>
+  </footer>
+  <script>
+    $(document).ready(function(){
+	    hideAllErrors();
+		$("#btnCalc").click(function(){
+		   hideAllErrors();
+		   calculateFormData();
+		});
+	})();
+  </script>
+ </body>
+</html> 
